@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+    <!-- The Modal -->
+    <div id="myModal">
+        <span class="close">&times;</span>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h2>Pre-booked ride events</h2>
+            <div id="events">
+                <textarea id="eventList" rows="10" cols="35"></textarea><br>
+                <input type="button" id="del_task" value="Delete Task">
+            </div>
+        </div>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p>Create your new ride event</p>
+            <div id="form">
+                <label>Name:
+                    <input type="text" id="name" maxlength="150">
+                </label><br>
+                <label>Choose a Route:
+                    <select name="routes" id="routes">   
+                        <option value="Select">--Select--</option>   
+                        <option value="Route1">Route1</option>
+                        <option value="Route2">Route2</option>
+                        <option value="Route3">Route3</option>
+                        <option value="Route4">Route4</option>
+                    </select>
+                </label><br>
+                <label>Time<select name="time" id="rideTime">
+                        <option value="Select">--Select--</option>
+                        <option value="5">5 AM</option>
+                        <option value="6">6 AM</option>
+                        <option value="7">7 AM</option>
+                        <option value="8">8 AM</option>
+                        <option value="9">9 AM</option>
+                        <option value="10">10 AM</option>
+                        <option value="11">11 AM</option>
+                        <option value="12">12 PM</option>
+                        <option value="13">14 PM</option>
+                        <option value="15">15 PM</option>
+                        <option value="16">16 PM</option> 
+                        <option value="17">17 PM</option>
+                    </select>
+                    </label>
+
+                <input type="button" id="add_task" value="Add Task">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
